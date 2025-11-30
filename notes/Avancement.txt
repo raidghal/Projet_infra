@@ -1,0 +1,5 @@
+21/11/2025   création du repo github 'Projet_infra'
+
+30/11/2025  Compréhension du sujet + vision sur ce qu'on implementera (Les branches, les VMs du cluster...) + ouverture d'un compte sur GCP
+
+ 
