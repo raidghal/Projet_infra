@@ -1,0 +1,15 @@
+J'ai creé deux branches:  'dev' et 'main'
+
+main → branche stable
+dev → branche de travail
+Alors nous travaillerons toujours dans la branch 'dev' et une fois sur de notre travail, on le fusionne avec la branche main
+
+
+Alors pour toute modification il faut commencer par 
+git checkout dev          # aller sur dev
+git pull origin dev       # récupérer les dernières modifs de GitHub
+
+
+
+Et à la fin on push sur la branche 'dev'
+git push origin dev
