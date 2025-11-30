@@ -1,0 +1,19 @@
+Dans le projet, il faudra construire un cluster Apache Spark sur le cloud GCP.
+
+Terraform: Provisionnement de l'infrastructure
+Ansible: Configurer le cluster Spark
+Github Actions: Automatiser l'intégration et le déploiment.
+
+
+Architecture du cluster:
+
+Master Node(machine qui planifie, distribue et orchestre les tâches vers les workers), Workers Nodes(Le nombre va changer durant les tests), Storage Node (GCS bucket), Edge Node ( Machine qui va intéragir avec le cluster).
+
+Pour le monitoring, il existe deux possibilités :
+*Installer Prometheus et Grafana sur l’Edge Node (puisqu’il ne participe pas au calcul distribué comme les Workers et peut donc héberger ces outils sans impact sur les performances).
+*Utiliser Cloud Monitoring de GCP pour superviser l’utilisation des ressources (CPU, mémoire) sans installation supplémentaire.
+
+Partie Test de l'application Wordcount: On teste avec 3 cas:
+* Cas 1: un seul worker(simulation d'une seule machine)
+* Cas 2: 2 workers nodes
+* Cas 3:l 3 workers nodes.
